@@ -13,8 +13,8 @@
 - [x] Скрипт валидации времени входа.
 - [x] PAM настроен.
 - [x] Тесты пройдены успешно. Результат см. на скриншотах:
-  - 🖼️ [Доступ запрещен (User)](https://github.com/kamil1403/otus_pam/blob/main/screenshots/otus_pam_1.png)
-  - 🖼️ [Доступ разрешен (Admin)](https://github.com/kamil1403/otus_pam/blob/main/screenshots/otus_pam_2.png)
+  - 🖼️ [Доступ запрещен](https://github.com/kamil1403/otus_pam/blob/main/screenshots/otus_pam_1.png)
+  - 🖼️ [Доступ разрешен](https://github.com/kamil1403/otus_pam/blob/main/screenshots/otus_pam_2.png)
 
 ### 🧭 Оглавление
 - [🧰 Шаг 1 - Подготовка пользователей](#one)
