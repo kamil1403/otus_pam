@@ -44,17 +44,14 @@ usermod -aG admin otusadm
 Файл /usr/local/bin/login.sh. Проверяет день недели и принадлежность к группе.
 ```bash
 #!/bin/bash
-
-# Если сегодня Суббота (Sat) или Воскресенье (Sun)
 if [ $(date +%a) = "Sat" ] || [ $(date +%a) = "Sun" ]; then
-  # Проверяем, входит ли юзер в группу admin
   if getent group admin | grep -qw "$PAM_USER"; then
-        exit 0 # Разрешить (админ)
+        exit 0 # Разрешить
       else
-        exit 1 # Запретить (обычный пользователь)
+        exit 1 # Запретить
     fi
   else
-    exit 0 # Будни - разрешить всем
+    exit 0 # Будни
 fi
 ```
 
